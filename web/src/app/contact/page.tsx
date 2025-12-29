@@ -1,10 +1,10 @@
-import React from "react";
-
 export const metadata = {
   title: "联系我们 | 臻合方略企业管理咨询有限公司",
   description:
     "获取会议执行与医学会务服务方案，联系我们的项目团队。支持专家顾问会、学术研讨会、数字会务与医学传播等多场景服务。",
 };
+
+import React from "react";
 
 export default function ContactPage() {
   return (
