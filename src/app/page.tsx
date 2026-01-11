@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
@@ -64,7 +65,7 @@ export default function Home() {
             区域学术会到数字会务的全流程执行支持，在合规框架内帮助品牌完成高质量的医学沟通。
           </p>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
               className="rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 shadow-sm transition hover:bg-sky-400"
@@ -77,6 +78,11 @@ export default function Home() {
             >
               查看服务体系
             </Link>
+
+            {/* 新加入的 Shadcn UI 按钮 - 修正了位置和结构 */}
+            {/* <Button variant="outline" className="rounded-full border-sky-500/50 text-sky-300 hover:bg-sky-500 hover:text-slate-950">
+              在线咨询
+            </Button> */}
           </div>
 
           <div className="flex flex-wrap gap-4 text-xs text-slate-400">
@@ -86,7 +92,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 右侧"学术科技感"可视化模块（纯前端实现，无需真实图片） */}
+        {/* 右侧"学术科技感"可视化模块 */}
         <div className="relative h-56 overflow-hidden rounded-3xl border border-sky-500/20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 shadow-[0_0_60px_rgba(56,189,248,0.25)] sm:h-64">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -left-10 top-10 h-40 w-40 rounded-full border border-sky-500/50 blur-[1px]" />
